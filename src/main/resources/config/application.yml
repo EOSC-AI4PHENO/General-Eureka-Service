@@ -1,0 +1,16 @@
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 15
+  server:
+    enable-self-preservation: true
+    waitTimeInMsWhenSyncEmpty: 0
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-service
